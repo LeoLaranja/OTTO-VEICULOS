@@ -1,14 +1,12 @@
 # OTTO VEICULOS WEBSITE
 
-💻 Projeto próprio de WebSite para agência de automóveis.
+## 💻 Projeto próprio de WebSite para agência de automóveis 💻. 🚶‍♂️ Primeiros Passos como dev Front-End 🚶‍♂️.
 
-🚶‍♂️Primeiros Passos como dev Front-End.
-
-Descrição:
+## Descrição:
 
 - Este projeto desenvolve um website para uma loja de automóveis em Juiz de Fora-MG, utilizando as tecnologias HTML, CSS e JavaScript. O objetivo é oferecer uma plataforma online amigável e informativa para que os clientes possam navegar pelo inventário de veículos, agendar serviços, entrar em contato com a loja e muito mais.
 
-Funcionalidades:
+## Funcionalidades:
 
 - Página inicial: Apresenta um banner rotativo dos veiculos disponíveis, últimas notícias do setor automotivo e informações de contato da loja.
 
@@ -20,6 +18,6 @@ Funcionalidades:
 
 - Observação: o site é composto por interatividade com WhatsApp para redirecionamento em casos de dúvidas quanto ao veiculo e condições de financiamento.
 
-Tecnologias Utilizadas:
+## Tecnologias Utilizadas:
 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
