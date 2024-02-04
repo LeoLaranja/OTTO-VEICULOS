@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otto Veiculos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div>
+                <a href="index.html"><img class="img-menu" src="img/otto_com_fundo-removebg-preview.png" alt="logo"></a>
+            </div>
+
+            <div>
+                <ul>
+                    <a href="index.html"> HOME </a>
+                    <a href="sobre.html"> SOBRE </a>
+                    <a href="servicos.html"> SERVIÇOS </a>
+                    <a class="contato" href="contato.html"> CONTATO </a>
+                    <div class="close-icon" onclick=" fechar()">
+                        <img src="img/close icon.png" alt="">
+                    </div>
+                </ul>
+            </div>
+
+            <div class="menu-icon" onclick="abrir()">
+              <img src="img/menu mobile.png" alt="">
+            </div>
+
+            
+        </nav>
+       
+    </div>
+
+    <section class="banner">
+        <div class="container">
+            <div class="banner-text">
+                <h1>Otto Veículos</h1>
+                <p> Procedência e qualidade em semi-novos.<br> <br>Há 25 anos realizando sonhos. </p>
+                <a class="contato1" href="contato.html">Entrar em Contato</a>
+            </div>
+        </div>
+    </section>
+</header>
+
+<section class="vendaSeuCarro">
+    <div class="container">
+        <div class="vendaSeuCarro-img">
+            <img src="img/venda_seu_carro-removebg-preview.png" alt="">
+        </div>    
+        <div class="vendaSeuCarro-text">
+            <h1>Venda seu Veículo</h1>
+            <p class="p1">Sim, vender seu carro para a Otto Veículos também é um bom negócio. </p><br>
+            <p class="p2">Essa é uma excelente opção pra você que está precisando vender o seu carro de maneira segura e imediata.</p><br>
+            <p class="p3">Em todos os casos efetuamos o pagamento à vista.</p><br><br><br>
+            <a class="contato" href="contato.html">Entrar em Contato</a>
+        </div>  
+    </div>
+    <div class="container">    
+        <div class="vendaSeuCarro-text">
+            <h1>Financie seu Veículo</h1>
+            <p class="p1">Prepare-se para conquistar o seu próximo veículo. </p><br>
+            <p class="p2">Condições que cabem no seu bolso.</p><br>
+            <p class="p3">Você escolhe o veículo que quer financiar e define o valor de entrada e a quantidade de parcelas que consegue pagar.</p><br><br><br>
+            <a class="contato" href="https://wa.me/5532988346943?text=Olá, Gostaria de mais informações quanto ao financiamento de veículos!" target="_blank">Faça uma Simulação</a>
+        </div>  
+        <div class="vendaSeuCarro-img">
+            <img src="img/financio (2).png" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="estoque">
+    <div class="container">
+        <div class="inicio-estoque">
+            <h3>Nossos Veículos</h3>
+            <p>Confira ofertas especiais que preparamos para você!</p>
+        </div>
+        <div class="busca">
+            <input  id="search-input" type="search" placeholder="Procurando um modelo específico?">
+        </div>
+    </div>
+    <div class="cards" id="cards">
+        <div onclick="cardsEsquerda(); cards1Esquerda1()"  class="seta-esquerda">
+            <img src="img/seta esquerda.png" alt="">
+        </div>
+        <div class="card-item">
+            <img src="img/onix.jpg" alt="onix">
+            <p class="titulo"><strong>Onix Joy 1.0 Flex 2019/2019 </strong></p>
+            <p class="descricao">
+                <strong>Veículo Possui:</strong> <br>
+                - Direção Elétrica/ Ar Condicionado <br>
+                - Vidros Elétricos/ Trava Elétrica e Alarme <br>
+                - Desembaçador/ Limpador Traseiro <br>
+                - Airbag Duplo / Freios ABS <br>
+                - 6 Marchas/ Som de Fábrica <br>
+                - Sensor de Ré Dianteiro e Traseiro <br>
+                - Manual e chave reserva <br>
+                - Com apenas 5.300 Kms rodados <br>
+                - Único Dono <br></p>
+            <div class="mais">
+                <a href="estoque.html" target="_blank"><button>Ver Mais</button></a>
+            </div>
+        </div>
+        <div class="card-item">
+            <img src="img/hb20.jpg" alt="onix">
+            <p class="titulo"><strong>HB20 Conf.Style 1.0 2013/2014 </strong></p>
+            <p class="descricao">
+                <strong>Veículo Possui:</strong> <br>
+                - Direção Elétrica/ Ar Condicionado <br>
+                - Vidros Elétricos / Trava Elétrica e Alarme <br>
+                - Airbag Duplo / Freios ABS <br>
+                - Desembaçador / Limpador Traseiro <br>
+                - Som de Fábrica <br>
+                - Manual e chave reserva <br>
+                - Controle de Som no Volante <br>
+                - Revisões c/ carimbo no manual <br>
+                - Km 91000</p>
+            <div class="mais">
+                <a href="estoque.html" target="_blank"><button>Ver Mais</button></a>
+            </div>
+        </div>
+        <div class="card-item">
+            <img src="img/saveiro.jpg" alt="onix">
+            <p class="titulo"><strong>Saveiro Trendline(CS) 1.6 2017/2018 </strong></p>
+            <p class="descricao">
+                <strong>Veículo Possui:</strong> <br>
+                - Direção Elétrica/ Ar Condicionado <br>
+                - Vidros Elétricos/ Trava Elétrica e Retrovisores Elétricos <br>
+                - Desembaçador/ Limpador Traseiro <br>
+                - Airbag Duplo / Freios ABS <br>
+                - Regulagem de Altura de Banco <br>
+                - 4 Pneus Zero <br>
+                - Som de Fábrica <br>
+                - Km : 92.000 <br></p>
+            <div class="mais">
+                <a href="estoque.html" target="_blank"><button>Ver Mais</button></a>
+            </div>
+        </div>
+        <div onclick="cardsDireita(); cardsDireita1()" class="seta-direita">
+            <img src="img/seta direita[.png" alt="">
+        </div>
+    </div>
+    
+
+    
+    
+    <div class="cards2">
+        <div onclick="cards2Esquerda(); cards2Esquerda2()" class="seta-esquerda">
+            <img src="img/seta esquerda.png" alt="">
+        </div>
+        <div class="card-item2">
+            <img src="img/fox.jpg" alt="onix">
+            <p class="titulo"><strong>Saveiro Trendline(CS) 1.6 2017/2018 </strong></p>
+            <p class="descricao">
+                <strong>Veículo Possui:</strong> <br>
+                - Direção Elétrica/ Ar Condicionado <br>
+                - Vidros Elétricos/ Trava Elétrica e Retrovisores Elétricos <br>
+                - Desembaçador/ Limpador Traseiro <br>
+                - Airbag Duplo / Freios ABS <br>
+                - Regulagem de Altura de Banco <br>
+                - 4 Pneus Zero <br>
+                - Som de Fábrica <br>
+                - Km : 92.000 <br></p>
+            <div class="mais">
+                <a href="estoque.html" target="_blank"><button>Ver Mais</button></a>
+            </div>
+        </div>
+
+        <div class="card-item2">
+            <img src="img/hb20 2.jpg" alt="onix">
+            <p class="titulo"><strong>Saveiro Trendline(CS) 1.6 2017/2018 </strong></p>
+            <p class="descricao">
+                <strong>Veículo Possui:</strong> <br>
+                - Direção Elétrica/ Ar Condicionado <br>
+                - Vidros Elétricos/ Trava Elétrica e Retrovisores Elétricos <br>
+                - Desembaçador/ Limpador Traseiro <br>
+                - Airbag Duplo / Freios ABS <br>
+                - Regulagem de Altura de Banco <br>
+                - 4 Pneus Zero <br>
+                - Som de Fábrica <br>
+                - Km : 92.000 <br></p>
+            <div class="mais">
+                <a href="estoque.html" target="_blank"><button>Ver Mais</button></a>
+            </div>
+        </div>
+
+        <div class="card-item2">
+            <img src="img/kwid.jpg" alt="onix">
+            <p class="titulo"><strong>Saveiro Trendline(CS) 1.6 2017/2018 </strong></p>
+            <p class="descricao">
+                <strong>Veículo Possui:</strong> <br>
+                - Direção Elétrica/ Ar Condicionado <br>
+                - Vidros Elétricos/ Trava Elétrica e Retrovisores Elétricos <br>
+                - Desembaçador/ Limpador Traseiro <br>
+                - Airbag Duplo / Freios ABS <br>
+                - Regulagem de Altura de Banco <br>
+                - 4 Pneus Zero <br>
+                - Som de Fábrica <br>
+                - Km : 92.000 <br></p>
+            <div class="mais">
+                <a href="estoque.html" target="_blank"><button>Ver Mais</button></a>
+            </div>
+        </div>
+        <div onclick="cards2Direita(); cards2Direita2()" class="seta-direita">
+            <img src="img/seta direita[.png" alt="">
+        </div>
+    </div>
+
+
+    
+    <div class="cards3">
+        <div onclick="cards3Esquerda(); cards3Esquerda3()" class="seta-esquerda">
+            <img src="img/seta esquerda.png" alt="">
+        </div>
+        <div class="card-item3">
+            <img src="img/banner 2.jpg" alt="onix">
+            <p class="titulo"><strong>Saveiro Trendline(CS) 1.6 2017/2018 </strong></p>
+            <p class="descricao">
+                <strong>Veículo Possui:</strong> <br>
+                - Direção Elétrica/ Ar Condicionado <br>
+                - Vidros Elétricos/ Trava Elétrica e Retrovisores Elétricos <br>
+                - Desembaçador/ Limpador Traseiro <br>
+                - Airbag Duplo / Freios ABS <br>
+                - Regulagem de Altura de Banco <br>
+                - 4 Pneus Zero <br>
+                - Som de Fábrica <br>
+                - Km : 92.000 <br></p>
+            <div class="mais">
+                <a href="estoque.html" target="_blank"><button>Ver Mais</button></a>
+            </div>
+        </div>
+
+        <div class="card-item3">
+            <img src="img/banner.jpg" alt="onix">
+            <p class="titulo"><strong>Saveiro Trendline(CS) 1.6 2017/2018 </strong></p>
+            <p class="descricao">
+                <strong>Veículo Possui:</strong> <br>
+                - Direção Elétrica/ Ar Condicionado <br>
+                - Vidros Elétricos/ Trava Elétrica e Retrovisores Elétricos <br>
+                - Desembaçador/ Limpador Traseiro <br>
+                - Airbag Duplo / Freios ABS <br>
+                - Regulagem de Altura de Banco <br>
+                - 4 Pneus Zero <br>
+                - Som de Fábrica <br>
+                - Km : 92.000 <br></p>
+            <div class="mais">
+                <a href="estoque.html" target="_blank"><button>Ver Mais</button></a>
+            </div>
+        </div>
+
+        <div class="card-item3">
+            <img src="img/hb20 2.jpg" alt="onix">
+            <p class="titulo"><strong>Saveiro Trendline(CS) 1.6 2017/2018 </strong></p>
+            <p class="descricao">
+                <strong>Veículo Possui:</strong> <br>
+                - Direção Elétrica/ Ar Condicionado <br>
+                - Vidros Elétricos/ Trava Elétrica e Retrovisores Elétricos <br>
+                - Desembaçador/ Limpador Traseiro <br>
+                - Airbag Duplo / Freios ABS <br>
+                - Regulagem de Altura de Banco <br>
+                - 4 Pneus Zero <br>
+                - Som de Fábrica <br>
+                - Km : 92.000 <br></p>
+            <div class="mais">
+                <a href="estoque.html" target="_blank"><button>Ver Mais</button></a>
+            </div>
+        </div>
+        <div onclick="cards3Direita(); cards3Direita3()" class="seta-direita">
+            <img src="img/seta direita[.png" alt="">
+        </div>
+    </div>  
+
+    <div class="cards4">
+        <div onclick="cards4Esquerda(); cards4Esquerda4()" class="seta-esquerda">
+            <img src="img/seta esquerda.png" alt="">
+        </div>
+        <div class="card-item4">
+            <img src="img/Facebook logo.png " alt="onix">
+            <p class="titulo"><strong>Saveiro Trendline(CS) 1.6 2017/2018 </strong></p>
+            <p class="descricao">
+                <strong>Veículo Possui:</strong> <br>
+                - Direção Elétrica/ Ar Condicionado <br>
+                - Vidros Elétricos/ Trava Elétrica e Retrovisores Elétricos <br>
+                - Desembaçador/ Limpador Traseiro <br>
+                - Airbag Duplo / Freios ABS <br>
+                - Regulagem de Altura de Banco <br>
+                - 4 Pneus Zero <br>
+                - Som de Fábrica <br>
+                - Km : 92.000 <br></p>
+            <div class="mais">
+                <a href="estoque.html" target="_blank"><button>Ver Mais</button></a>
+            </div>
+        </div>
+
+        <div class="card-item4">
+            <img src="img/hb20.jpg" alt="onix">
+            <p class="titulo"><strong>Saveiro Trendline(CS) 1.6 2017/2018 </strong></p>
+            <p class="descricao">
+                <strong>Veículo Possui:</strong> <br>
+                - Direção Elétrica/ Ar Condicionado <br>
+                - Vidros Elétricos/ Trava Elétrica e Retrovisores Elétricos <br>
+                - Desembaçador/ Limpador Traseiro <br>
+                - Airbag Duplo / Freios ABS <br>
+                - Regulagem de Altura de Banco <br>
+                - 4 Pneus Zero <br>
+                - Som de Fábrica <br>
+                - Km : 92.000 <br></p>
+            <div class="mais">
+                <a href="estoque.html" target="_blank"><button>Ver Mais</button></a>
+            </div>
+        </div>
+
+        <div class="card-item4">
+            <img src="img/Instagram_logo.webp" alt="onix">
+            <p class="titulo"><strong>Saveiro Trendline(CS) 1.6 2017/2018 </strong></p>
+            <p class="descricao">
+                <strong>Veículo Possui:</strong> <br>
+                - Direção Elétrica/ Ar Condicionado <br>
+                - Vidros Elétricos/ Trava Elétrica e Retrovisores Elétricos <br>
+                - Desembaçador/ Limpador Traseiro <br>
+                - Airbag Duplo / Freios ABS <br>
+                - Regulagem de Altura de Banco <br>
+                - 4 Pneus Zero <br>
+                - Som de Fábrica <br>
+                - Km : 92.000 <br></p>
+            <div class="mais">
+                <a href="estoque.html" target="_blank"><button>Ver Mais</button></a>
+            </div>
+        </div>
+        <div onclick="cards4Direita(); cards4Direita4()" class="seta-direita">
+            <img src="img/seta direita[.png" alt="">
+        </div>
+    </div> 
+
+    <div id="result-car" class="hidden">
+        <div class="grid-container">
+            <div class="car-card" id="">
+                <div class="card-img">
+                    <img id="car-img" class="car-img" />
+                    <div class="play">
+                        <span class="fa fa-solid fa-play"></span>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <a title="Foo Fighters" class="vst" href=""></a>
+                    <span class="car-name" id="car-name"></span>
+                    <span class="car-categorie"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section class="redes">
+    <div class="redes-area">
+        <h3>Nossas Redes</h3>
+        <p>Confira nossas redes sociais e fique por dentro de toda novidade!!</p>
+    </div>
+    <div class="icons">
+        <div class="instagran">
+            <a href="https://instagram.com/otto_veiculos" target="_blank"><img src="img/Instagram_logo.webp" alt=""></a>
+        </div>
+        <div class="facebook">
+            <a href="https://www.facebook.com/ottoveiculos149/" target="_blank"><img src="img/Facebook logo.png" alt=""></a>
+        </div>
+        <div class="email">
+            <a href="mailto: carlosottoveiculos@hotmail.com" target="_blank"><img src="img/email logo.png" alt=""></a>
+        </div>
+        <div class="whatsapp">
+            <a href="https://wa.me/5532988346943?text=Olá, gostaria de mais informações sobre um veículo específico!" target="_blank"><img src="img/WhatsApp. logo.webp" alt=""></a>
+        </div>
+    </div>
+</section>
+
+<section class="sobre">
+    <div class="container">
+       <div class="sobre-area">
+            <div class="redes-area">
+                <h3>Sobre nós</h3>
+            </div>
+            <div class="sobre-img">
+                <img src="img/loja.jpg" alt="">
+            </div>
+            <div class="sobre-text">
+            <h3>A Otto Veículos está no mercado desde 1998, traçando uma trajetória de transparência e qualidade em semi-novos. <br> Trabalhamos com veículos em excelente estado de conservação e procuramos atender nossos clientes de forma clara e objetiva. <br> Entregamos confiança na hora de negociar seu novo veículo.</h3>
+            <p></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-area">
+            <div class="logo-footer">
+               <a href="index.html"> <img src="img/otto.png" alt=""></a>
+            </div>
+            <div class="footer-ul">
+                <ul>
+                    <a href="index.html"> HOME </a>
+                    <a href="sobre.html"> SOBRE </a>
+                    <a href="servicos.html"> SERVIÇOS </a>
+                    <a class="contato2" href="contato.html"> CONTATO </a>
+                </ul>
+            </div>  
+        </div>
+        <div class="mapa">
+            <div class="img-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2620.178124026295!2d-43.33958479151927!3d-21.761233172463424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989caf42d976b9%3A0x672f7ca450f2da6d!2sOtto%20Ve%C3%ADculos!5e0!3m2!1spt-PT!2sbr!4v1684811868712!5m2!1spt-PT!2sbr" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="text-endereco">
+            <h2>OTTO VEÍCULOS</h2>
+            <h4>Rua Carlos Otto, 149, Costa Carvalho - Juiz de Fora-MG</h4>
+            <h4>Cep: 36050-070</h4>
+            <h3>Tel.: 32 3215-6943</h3>
+            <h3>Cel. WhatsApp: 32 98834-6943</h3>
+        </div>
+    </div>
+</footer>
+
+<footer class="bar">
+    <div class="container"> 
+        <div class="bar-area">
+            <div class="direitos">
+                <h4>© OTTO VEÍCULOS. TODOS OS DIREITOS RESERVADOS.</h4>
+            </div>
+            <div class="leonardo">
+                <h3>Desenvolvido por    : LEONARDO LARANJA</h3>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="arquivo.js"></script> 
+</body>
+</html>

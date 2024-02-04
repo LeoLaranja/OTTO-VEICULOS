@@ -1,0 +1,74 @@
+.busca {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 28px;
+    margin-left: 8px;
+    border-radius: 500px;
+    border: 1px solid transparent;
+ }
+ #search-input {
+    margin-bottom: 15px;
+    width: 600px;
+    border-radius: 500px;
+    border: 2px solid rgb(191, 191, 191);
+    height: 36px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+    padding: 0 100px 0 45px;
+    font-size: 16px;
+    color: #2a77d4;
+    background-color: rgb(17, 17, 17);
+ }
+    #search-input::placeholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #c7c7c7;
+  }
+.car-card {
+    background: #a6c8f1;
+    border-radius: 8px;
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 16px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: 300px;
+    cursor: pointer;
+  }
+  
+  .car-card:hover {
+    background-color: #2a77d4;
+  }
+  
+  .card-img {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .car-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .hidden{
+    display: none;
+  }
+  #result-car{
+    margin-top: 50px;
+    text-align: -webkit-center;
+  }
+  .car-name{
+    color: #252525;
+    font-weight: 900;
+  }

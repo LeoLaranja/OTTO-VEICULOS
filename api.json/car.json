@@ -1,0 +1,11 @@
+{
+    "car": [
+      { "id": 1, "name": "Onix Joy 1.0 Flex 2019", "genre": "2019", "urlImg": "img/onix.jpg" },
+      { "id": 2, "name": "HB20 Conf.Style 1.0 2014", "genre": "2014", "urlImg": "img/hb20.jpg" },
+      { "id": 3, "name": "Saveiro Trendline(CS) 1.6 2018", "genre": "2018", "urlImg": "img/saveiro.jpg" },
+      { "id": 4, "name": "Fox 1.6 Trend 2013", "genre": "2013", "urlImg": "img/fox.jpg" },
+      { "id": 5, "name": "Kwid zen 2019 1.0", "genre": "2019", "urlImg": "img/kwid.jpg" },
+      { "id": 6, "name": "Hb20S 1.6 2014", "genre": "2014", "urlImg": "img/hb20 2.jpg" },
+      { "id": 7, "name": "Carro", "genre": "2020", "urlImg": "img/banner 2.jpg" }
+    ]
+  }
